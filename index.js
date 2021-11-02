@@ -218,10 +218,12 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+    for (let i = number; i === 0; i--){
+      return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i} bottles of soda on the wall`;
+    }
 }
-
+console.log(annoyingSong(7));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -238,11 +240,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
-}
-
-
+function grade(score){
+  if (score >= 90 && score <=100){
+    return 'you got an A';
+  } else if (score >= 80 && score <=89){
+      return 'you got a B';
+  } else if (score >= 70 && score <=79) {
+      return 'you got a C';
+  } else if (score >= 60 && score <=69) {
+      return 'you got a D';
+  } else if (score < 60) {
+      return 'you got an F';
+  }
+} 
+// console.log(grade(85));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
